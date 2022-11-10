@@ -3,7 +3,7 @@
 ## Exercise 1
 
 Based on file SRR1754715 from SRA (RADseq Pedicularis sect. Cyathophora: https://www.ncbi.nlm.nih.gov/sra/?term=SRR1754715). 
-
+Let's have a look at the first sequence of the file to remind us of the format of fasta and fastq. 
 FASTQ :
 ```
 @SRR1754715.1.1 GRC13_0027_FC:4:1:12560:1179 length=74
@@ -17,18 +17,18 @@ FASTA :
 TGCAGGAAGGAGATTTTCGNACGTAGTGNNNNNNNNNNNNNNGCCNTGGATNNANNNGTGTGCGTGAAGAANAN
 ```
 
-ecrire un script en bash (`fichier.sh` qui est exécutable) qui convertit un fichier fastq en fasta
--> input "fastq"
--> output "fasta"
-par exemple, en utilisant `grep` et `sed`
-utiliser les variables dans le script bash
+Write a bash script (executable `file.sh` file) that converts fastq into fasta. 
+-> script input: "fastq"
+-> script output: "fasta"
+ex. using `grep` et `sed`
+make use of bash-defined variables. 
 
 ------------------------------------------------------------------------
 
 ## Exercise 2
 
-*utiliser saucisson <-> seitan selon vos préférences.*
+*use saucisson <-> seitan according to yout preferences.*
 
-1. créer une répertoire qui s'appelle saucisson. 
-2. dans saucisson : découper le fichier SRR...fastq en x fichiers de 10,000 séquences chacun. 
-3. hors saucisson : écrire un script qui donne le nombre de séquence pour chacun des fichiers de saucisson. 
+1. create a directory called `saucisson`. 
+2. in `saucisson` : split the file in x files containing 10,000 sequences (not lines) each. 
+3. out of `saucisson`: write a script that spits our the number of sequences in each of the file contained in saucisson`. 
