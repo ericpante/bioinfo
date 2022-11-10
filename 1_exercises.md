@@ -2,7 +2,7 @@
 
 ## Exercise 1
 
-Based on file SRR1754715 from SRA (RADseq Pedicularis sect. Cyathophora: https://www.ncbi.nlm.nih.gov/sra/?term=SRR1754715`). 
+Based on file SRR1754715 from SRA (RADseq Pedicularis sect. Cyathophora: https://www.ncbi.nlm.nih.gov/sra/?term=SRR1754715). 
 
 FASTQ :
 ```
