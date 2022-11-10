@@ -1,8 +1,8 @@
-## Unix Shell and BASH exercices
+# Unix Shell and BASH exercices
 
-EXERCICE 1
+## Exercise 1
 
-FASTQ :
+`FASTQ :
 
 @SRR1754715.1.1 GRC13_0027_FC:4:1:12560:1179 length=74
 TGCAGGAAGGAGATTTTCGNACGTAGTGNNNNNNNNNNNNNNGCCNTGGATNNANNNGTGTGCGTGAAGAANAN
@@ -12,7 +12,7 @@ TGCAGGAAGGAGATTTTCGNACGTAGTGNNNNNNNNNNNNNNGCCNTGGATNNANNNGTGTGCGTGAAGAANAN
 FASTA :
 
 >SRR1754715.1.1 GRC13_0027_FC:4:1:12560:1179 length=74
-TGCAGGAAGGAGATTTTCGNACGTAGTGNNNNNNNNNNNNNNGCCNTGGATNNANNNGTGTGCGTGAAGAANAN
+TGCAGGAAGGAGATTTTCGNACGTAGTGNNNNNNNNNNNNNNGCCNTGGATNNANNNGTGTGCGTGAAGAANAN`
 
 ecrire un script en bash (fichier.sh qui est "x") qui convertit un fichier fastq en fasta
 -> input "fastq"
@@ -22,9 +22,10 @@ utiliser les variables dans le script bash
 
 ------------------------------------------------------------------------
 
-EXERCICE 2
+## Exercise 2
 
-saucisson <-> seitan selon vos préférences. 
-1- créer une répertoire qui s'appele saucisson. 
-2- dasn saucisson : découper le fichier SRR...fastq en x fichiers de 10,000 séquences chacun. 
-3- hors saucisson : écrire un script qui donne le nombre de séquence pour chacun des fichiers de saucisson. 
+*utiliser saucisson <-> seitan selon vos préférences.*
+
+1. créer une répertoire qui s'appele saucisson. 
+2. dans saucisson : découper le fichier SRR...fastq en x fichiers de 10,000 séquences chacun. 
+3. hors saucisson : écrire un script qui donne le nombre de séquence pour chacun des fichiers de saucisson. 
