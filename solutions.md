@@ -1,5 +1,9 @@
 ## Exercise 1
 
+To convert a fastq to fasta, using the previously learned command, see script fastq2fasta.sh`. 
+
+## Exercise 2
+
 See `get_sequence_number.sh` and `get_sequence_number_batch.sh` as separate script files. 
 
 Type the following commands. 
