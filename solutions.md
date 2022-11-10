@@ -1,6 +1,6 @@
 ## Exercise 1
 
-To convert a fastq to fasta, using the previously learned command, see script fastq2fasta.sh`. 
+To convert a fastq to fasta, using the previously learned command, see script `fastq2fasta.sh`. 
 
 ## Exercise 2
 
