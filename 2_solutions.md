@@ -14,6 +14,7 @@ split -l 40000 -d SRR1754715.fastq SRR1754715_ # 10,000 sequences needed, ie 40,
 cd .. # step back
 chmod a+x get_sequence_number_batch.sh # make script executable
 bash get_sequence_number_batch.sh ./saucisson/SRR1754715_* # run script
+```
 
 ## Exercise 3
 
