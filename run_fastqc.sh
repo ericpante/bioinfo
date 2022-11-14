@@ -7,7 +7,7 @@
 ~/Downloads/FastQC/./fastqc $1
 
 # 2. Prep folder
-name=$(echo "SRR1754715.fastq" | cut -d '.' -f 1)
+name=$(echo $1 | cut -d '.' -f 1)
 suff="_fastqc"
 fold="$name$suff"
 
@@ -20,4 +20,4 @@ echo ""
 echo "Parsing..."
 ~/Downloads/./parsing_fastqc.sh $fold/fastqc_data.txt > Results_fastq_parsing.txt
 echo "...done."
-# chmod a+x batch_fastqc.sh 
+# chmod a+x run_fastqc.sh 
