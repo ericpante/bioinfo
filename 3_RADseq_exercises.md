@@ -44,7 +44,7 @@ conda config --set channel_priority strict
 
 We will see in lecture how we can build different library types to get more sequence data from one run. Different libraries can have single-end (SE) reads, paired-end (PE) reads, reads with mated-pairs (MP). We will also review the different flavors of RAD (eg. sdRAD, ddRAD, etc.). 
 
-## Getting the raw data through the SRA-toolkit. 
+## Getting the raw data through the SRA-toolkit (for information only - please don't run this-)
 
 Let's set the scene. 
 1. Set ut a directory called `ipyrad` in your `$HOME`
@@ -80,7 +80,7 @@ which fastq-dump
 
 Now we can use the kit to get multiple SRR data files. 
 ```
-prefetch --option-file SRR_Acc_List.txt
+prefetch ACCESSION ## or --option-file SRR_Acc_List.txt for a list
 fastq-dump ACCESSION
 ```
 
