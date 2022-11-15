@@ -44,7 +44,7 @@ conda config --set channel_priority strict
 
 We will see in lecture how we can build different library types to get more sequence data from one run. Different libraries can have single-end (SE) reads, paired-end (PE) reads, reads with mated-pairs (MP). We will also review the different flavors of RAD (eg. sdRAD, ddRAD, etc.). 
 
-## Getting the raw data. 
+## Getting the raw data through the SRA-toolkit. 
 
 Let's set the scene. 
 1. Set ut a directory called `ipyrad` in your `$HOME`
@@ -59,7 +59,8 @@ Deren A. R. Eaton, Richard H. Ree, Inferring Phylogeny and Introgression using R
 
 This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. You can get the data from SRA, as seen in another exercise. Here is the link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. Get the `SRR_Acc_List.txt`
 
-We will use the SRA tool kit. 
+We will use the SRA tool kit. Here is the HowTos: https://github.com/ncbi/sra-tools/wiki/HowTo:-fasterq-dump and https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
+
 1. Get the toolkit: 
 ```
 wget --output-document sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
@@ -80,4 +81,12 @@ which fastq-dump
 Now we can use the kit to get multiple SRR data files. 
 ```
 prefetch --option-file SRR_Acc_List.txt
+fastq-dump ACCESSION
+```
 
+## Getting the data through ipyrad. 
+
+ipyrad has a wrapper to fetch the data from SRA. Use the following command to get the Eaton and Ree data. 
+```
+ipyrad --download SRP021469 example_empirical_data/
+```
