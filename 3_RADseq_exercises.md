@@ -1,6 +1,6 @@
 ## Introduction
 
-We are going to perform a full analysis of RADseq data, from initial QC to SNP analysis, using `ipyrad` (Eaton and Overcast 2020). These come from the Eaton & Ree (2013) single-end RAD data set. This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. 
+We are going to perform a full analysis of RADseq data, from initial QC to SNP analysis, using `ipyrad` (Eaton and Overcast 2020). Data come from the Eaton & Ree (2013) single-end RAD data set. This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. 
 
 Eaton DAR, Overcast I. ipyrad: Interactive assembly and analysis of RADseq datasets. Bioinformatics. 2020 Apr 15;36(8):2592-2594. doi: 10.1093/bioinformatics/btz966. PMID: 31904816.
 
@@ -39,21 +39,20 @@ conda install ipyrad -c conda-forge -c bioconda
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
-
 `ipyrad` should be up and running. 
+
+Now let's set the scene for the analysis. 
+1. Set ut a directory called `ipyrad` in your `$HOME`
+2. add a `rawdata` subdirectory
+3. add a `filtered` subdirectory
+4. add an ànalysis`subdirectory
+5. place your scripts at the root of your project directory, called ìpyrad`
 
 ## Lecture on library types
 
 We will see in lecture how we can build different library types to get more sequence data from one run. Different libraries can have single-end (SE) reads, paired-end (PE) reads, reads with mated-pairs (MP). We will also review the different flavors of RAD (eg. sdRAD, ddRAD, etc.). 
 
 ## Getting the raw data through the SRA-toolkit (for information only - please don't run this-)
-
-Let's set the scene. 
-1. Set ut a directory called `ipyrad` in your `$HOME`
-2. add a `rawdata` subdirectory
-3. add a `filtered` subdirectory
-4. add an ànalysis`subdirectory
-5. place your scripts at the root of your project directory, called ìpyrad`
 
 Let's get the data from SRA using their toolkit. Here is the SRA link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. Get the `SRR_Acc_List.txt` to use with the toolkit
 
