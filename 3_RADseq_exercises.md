@@ -68,7 +68,7 @@ tar -vxzf sratoolkit.tar.gz
 ```
 3. Add the toolkit to the `$PATH` (for this session only)
 ```
-export PATH=$PATH:$PWD/sratoolkit.3.0.0-mac64/bin
+export PATH=$PATH:$PWD/sratoolkit.3.0.0-xxx/bin # xxx: replace by your version.
 ```
 4. Test it. 
 ```
@@ -78,7 +78,7 @@ which fastq-dump
 Now we can use the kit to get multiple SRR data files. 
 ```
 prefetch ACCESSION ## or --option-file SRR_Acc_List.txt for a list
-fastq-dump ACCESSION
+fastq-dump ACCESSION ACCESSION ACCESSION ACCESSION ...
 ```
 
 ## Getting the data through ipyrad. 
