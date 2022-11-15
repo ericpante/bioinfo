@@ -57,7 +57,7 @@ Let's get the data. These come from the Eaton & Ree (2013) single-end RAD data s
 
 Deren A. R. Eaton, Richard H. Ree, Inferring Phylogeny and Introgression using RADseq Data: An Example from Flowering Plants (Pedicularis: Orobanchaceae), Systematic Biology, Volume 62, Issue 5, September 2013, Pages 689–706, https://doi.org/10.1093/sysbio/syt032
 
-This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html
+This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. You can get the data from SRA, as seen in another exercise. Here is the link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. 
 
 
 
