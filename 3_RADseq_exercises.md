@@ -1,8 +1,10 @@
 ## Introduction
 
-We are going to perform a full analysis of RADseq data, from initial QC to SNP analysis, using `ipyrad` (Eaton and Overcast 2020). 
+We are going to perform a full analysis of RADseq data, from initial QC to SNP analysis, using `ipyrad` (Eaton and Overcast 2020). These come from the Eaton & Ree (2013) single-end RAD data set. This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. 
 
 Eaton DAR, Overcast I. ipyrad: Interactive assembly and analysis of RADseq datasets. Bioinformatics. 2020 Apr 15;36(8):2592-2594. doi: 10.1093/bioinformatics/btz966. PMID: 31904816.
+
+Eaton DAR, Ree RH. Inferring Phylogeny and Introgression using RADseq Data: An Example from Flowering Plants (Pedicularis: Orobanchaceae), Systematic Biology, Volume 62, Issue 5, September 2013, Pages 689–706, https://doi.org/10.1093/sysbio/syt032
 
 ## Setting up your workstation
 
@@ -53,11 +55,7 @@ Let's set the scene.
 4. add an ànalysis`subdirectory
 5. place your scripts at the root of your project directory, called ìpyrad`
 
-Let's get the data. These come from the Eaton & Ree (2013) single-end RAD data set. 
-
-Deren A. R. Eaton, Richard H. Ree, Inferring Phylogeny and Introgression using RADseq Data: An Example from Flowering Plants (Pedicularis: Orobanchaceae), Systematic Biology, Volume 62, Issue 5, September 2013, Pages 689–706, https://doi.org/10.1093/sysbio/syt032
-
-This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. You can get the data from SRA, as seen in another exercise. Here is the link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. Get the `SRR_Acc_List.txt`
+Let's get the data from SRA using their toolkit. Here is the SRA link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. Get the `SRR_Acc_List.txt` to use with the toolkit
 
 We will use the SRA tool kit. Here is the HowTos: https://github.com/ncbi/sra-tools/wiki/HowTo:-fasterq-dump and https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump
 
