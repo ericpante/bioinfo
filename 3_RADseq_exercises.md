@@ -57,7 +57,23 @@ Let's get the data. These come from the Eaton & Ree (2013) single-end RAD data s
 
 Deren A. R. Eaton, Richard H. Ree, Inferring Phylogeny and Introgression using RADseq Data: An Example from Flowering Plants (Pedicularis: Orobanchaceae), Systematic Biology, Volume 62, Issue 5, September 2013, Pages 689–706, https://doi.org/10.1093/sysbio/syt032
 
-This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. You can get the data from SRA, as seen in another exercise. Here is the link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. 
+This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html. You can get the data from SRA, as seen in another exercise. Here is the link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. Get the `SraAccList.txt`
 
+We will use the SRA tool kit. 
+1. Get the toolkit: 
+```
+wget --output-document sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/current/sratoolkit.current-ubuntu64.tar.gz
+```
+2. Extract the tookit from tarball
+```
+tar -vxzf sratoolkit.tar.gz
+```
+3. Add the toolkit to the `$PATH`
+```
+export PATH=$PATH:$PWD/sratoolkit.3.0.0-mac64/bin
+4. Test it. 
+```
+fastq-dump
 
+prefetch --option-file SraAccList.txt
 
