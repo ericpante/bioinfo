@@ -27,6 +27,7 @@ conda info
 
 # install ipyrad
 conda install ipyrad -c conda-forge -c bioconda
+
 # additional conda settings recommended by the authors
 conda create -n ipyrad
 conda activate ipyrad
@@ -37,7 +38,7 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-ipyrad should be up and running. 
+`ipyrad` should be up and running. 
 
 ## Lecture on library types
 
