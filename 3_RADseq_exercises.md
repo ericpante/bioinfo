@@ -81,12 +81,15 @@ prefetch ACCESSION ## or --option-file SRR_Acc_List.txt for a list
 fastq-dump ACCESSION ACCESSION ACCESSION ACCESSION ...
 ```
 
-## Getting the data through ipyrad. 
+## Getting the data through ipyrad
 
 ipyrad has a wrapper to fetch the data from SRA. Use the following command to get the Eaton and Ree data. 
 ```
 ipyrad --download SRP021469 rawdata/
 ```
+
+## Running the ipyrad analysis workflow
+
 Now set up a new assembly named after the biological model system: 
 ```
 ipyrad -n pedicularis
@@ -98,7 +101,3 @@ Let's run ipyrad with the chosen parameters :
 ipyrad -p params-pedicularis.txt -s 1234567 -r
 
 We'll look at the report and the outfiles. Please open the files named `pedicularis_stats.txt`, pedicularis.loci`. Now put your seatbelt on: we'll look at the pedicularis.vcf` file. vcf is a bit more complicated to read and can make one squint. Here is the doc to read it: https://samtools.github.io/hts-specs/VCFv4.2.pdf
-
-
-
-
