@@ -69,7 +69,7 @@ wget --output-document sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/
 ```
 tar -vxzf sratoolkit.tar.gz
 ```
-3. Add the toolkit to the `$PATH`
+3. Add the toolkit to the `$PATH` (for this session only)
 ```
 export PATH=$PATH:$PWD/sratoolkit.3.0.0-mac64/bin
 ```
