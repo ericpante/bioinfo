@@ -60,3 +60,11 @@ PASS    Adapter Content SRR1754715.fastq
 ```
 SRR1754715.fastq 696994 74 44 P P P P F W P P F W P
 ```
+
+------------------------------------------------------------------------
+
+## Exercise 4
+
+create a function to parse a vcf file and keep variants according to the number of alleles (a) within individuals, (b) among individuals. 
+
+
