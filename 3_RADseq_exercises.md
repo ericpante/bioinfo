@@ -99,5 +99,5 @@ Please open the `params-pedicularis.txt` and study the param file. We'll divide 
 Let's run ipyrad with the chosen parameters : 
 ```
 ipyrad -p params-pedicularis.txt -s 1234567 -r
-
+```
 We'll look at the report and the outfiles. Please open the files named `pedicularis_stats.txt`, pedicularis.loci`. Now put your seatbelt on: we'll look at the pedicularis.vcf` file. vcf is a bit more complicated to read and can make one squint. Here is the doc to read it: https://samtools.github.io/hts-specs/VCFv4.2.pdf
