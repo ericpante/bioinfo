@@ -85,5 +85,5 @@ fastq-dump ACCESSION
 
 ipyrad has a wrapper to fetch the data from SRA. Use the following command to get the Eaton and Ree data. 
 ```
-ipyrad --download SRP021469 example_empirical_data/
+ipyrad --download SRP021469 rawdata/
 ```
