@@ -4,7 +4,7 @@ We are going to perform a full analysis of RADseq data, from initial QC to SNP a
 
 Eaton DAR, Overcast I. ipyrad: Interactive assembly and analysis of RADseq datasets. Bioinformatics. 2020 Apr 15;36(8):2592-2594. doi: 10.1093/bioinformatics/btz966. PMID: 31904816.
 
-## Setting up your work station
+## Setting up your workstation
 
 1. On the university computers, log into Ubuntu. Alternatively, run your live Lubuntu from your USB drive. 
 2. Install `conda` using the following commands (source: https://ipyrad.readthedocs.io/en/master/3-installation.html#longform). The full instructions are on the `ipyrad` website. 
@@ -43,4 +43,21 @@ conda config --set channel_priority strict
 ## Lecture on library types
 
 We will see in lecture how we can build different library types to get more sequence data from one run. Different libraries can have single-end (SE) reads, paired-end (PE) reads, reads with mated-pairs (MP). We will also review the different flavors of RAD (eg. sdRAD, ddRAD, etc.). 
+
+## Getting the raw data. 
+
+Let's set the scene. 
+1. Set ut a directory called `ipyrad` in your `$HOME`
+2. add a `rawdata` subdirectory
+3. add a `filtered` subdirectory
+4. add an ànalysis`subdirectory
+5. place your scripts at the root of your project directory, called ìpyrad`
+
+Let's get the data. These come from the Eaton & Ree (2013) single-end RAD data set. 
+
+Deren A. R. Eaton, Richard H. Ree, Inferring Phylogeny and Introgression using RADseq Data: An Example from Flowering Plants (Pedicularis: Orobanchaceae), Systematic Biology, Volume 62, Issue 5, September 2013, Pages 689–706, https://doi.org/10.1093/sysbio/syt032
+
+This link gives the background ; please have a look at the paper. https://ipyrad.readthedocs.io/en/master/API-assembly/cookbook-empirical-API-1-pedicularis.html
+
+
 
