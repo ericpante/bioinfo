@@ -65,10 +65,10 @@ SRR1754715.fastq 696994 74 44 P P P P F W P P F W P
 
 ## Exercise 4
 
-Create a function to parse a vcf file and keep variants according to the number of alleles (a) within individuals, (b) among individuals. Use the vcf file in this ipyrad tutorial to prepare your script: https://ipyrad.readthedocs.io/en/master/pedicularis_.html. Here is the documentation for reading a vcf: https://samtools.github.io/hts-specs/VCFv4.2.pdf.
+Create a function to parse a vcf file and keep variants according to the number of alleles (a) within individuals, (b) among individuals. Use the vcf file in this ipyrad tutorial to prepare your script: https://ipyrad.readthedocs.io/en/master/pedicularis_.html. Here is the documentation for reading a vcf: https://samtools.github.io/hts-specs/VCFv4.2.pdf. Do you observe any loci with intra-individual genetic richness larger than two?
 
 ------------------------------------------------------------------------
 
 ## Exercise 5
 
-Advanced. Create a function to annotate ITS-SSU-LSU RAD loci with `blastn`. Loci can be found in the `.loci` file created by ipyrad. `blastn` is part of the `blast+`toolkit https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download. ITS, LSU and SSU are repeated many times in the genome, and their inclusion in the locus catalog might introduce noise due to the assembly of paralogs. In addition, these databases are small compared to other ncbi databases (eg. nr), and therefore more suited to the format of this class.  
+Advanced. Create a function to annotate ITS-SSU-LSU RAD loci with `blastn`. Loci can be found in the `.loci` file created by ipyrad. `blastn` is part of the `blast+`toolkit https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download. ITS, LSU and SSU are repeated many times in the genome, and their inclusion in the locus catalog might introduce noise due to the assembly of paralogs. In addition, these databases are small compared to other ncbi databases (eg. nr), and therefore more suited to the format of this class.  What is the proportion of ITS /rDNA loci compared to the full dataset? Do these loci have, on average, more alleles than other loci?
