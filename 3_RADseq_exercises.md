@@ -87,3 +87,12 @@ ipyrad has a wrapper to fetch the data from SRA. Use the following command to ge
 ```
 ipyrad --download SRP021469 rawdata/
 ```
+Now set up a new assembly named after the biological model system: 
+```
+ipyrad -n pedicularis
+```
+Please open the `params-pedicularis.txt` and study the param file. We'll divide up the params among us, and in 15' we'll each take turn to explain to the others how "our parameter" works. 
+
+
+
+
