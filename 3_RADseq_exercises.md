@@ -91,7 +91,13 @@ Now set up a new assembly named after the biological model system:
 ```
 ipyrad -n pedicularis
 ```
-Please open the `params-pedicularis.txt` and study the param file. We'll divide up the params among us, and in 15' we'll each take turn to explain to the others how "our parameter" works. 
+Please open the `params-pedicularis.txt` and study the param file. We'll divide up the steps and the params among us, and in 15' we'll each take turn to explain to the others how the "our parameter" works. 
+
+Let's run ipyrad with the chosen parameters : 
+```
+ipyrad -p params-pedicularis.txt -s 1234567 -r
+
+We'll look at the report and the outfiles. Please open the files named `pedicularis_stats.txt`, pedicularis.loci`. Now put your seatbelt on: we'll look at the pedicularis.vcf` file. vcf is a bit more complicated to read and can make one squint. Here is the doc to read it: https://samtools.github.io/hts-specs/VCFv4.2.pdf
 
 
 
