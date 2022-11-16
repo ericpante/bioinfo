@@ -45,7 +45,7 @@ Now let's set the scene for the analysis.
 1. Set ut a directory called `ipyrad` in your `$HOME`
 2. add a `rawdata` subdirectory
 3. add a `filtered` subdirectory
-4. add an ànalysis`subdirectory
+4. add an `analysis`subdirectory
 5. place your scripts at the root of your project directory, called ìpyrad`
 
 ## Lecture on library types
