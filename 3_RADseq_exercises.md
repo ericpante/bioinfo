@@ -107,6 +107,8 @@ We'll look at the report and the outfiles. Please open the files named `pedicula
 
 Run in triplicate : choose a file and split it in three chuncks 
 
+split -l929328 SRR1754715.fastq boudin
+
 depth of coverage : for parameters [11] and [12]
 1. 6 : the default
 2. 12: double the default
