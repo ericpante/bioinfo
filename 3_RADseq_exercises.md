@@ -174,8 +174,10 @@ Sanity check : Same number of loci / sample.
 1               0             0
 2               0             0
 3             485           485
+```
+Sanity check : Same number of loci / sample.
 
-
+```
 The distribution of SNPs (var and pis) per locus.
 ## var = Number of loci with n variable sites (pis + autapomorphies)
 ## pis = Number of loci with n parsimony informative site (minor allele in >1 sample)
@@ -189,6 +191,8 @@ The distribution of SNPs (var and pis) per locus.
 3    9      107    0        0
 4    0      107    0        0
 5    1      112    0        0
+```
+This is explained in the FAQ of the docs : https://ipyrad.readthedocs.io/en/master/faq.html?highlight=sum_var#how-do-i-interpret-the-distribution-of-snps-var-and-pis-per-locus-in-the-stats-txt-output-file
 
 
 ## Final Sample stats summary
