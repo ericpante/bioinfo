@@ -105,8 +105,9 @@ We'll look at the report and the outfiles. Please open the files named `pedicula
 
 ## playing with the parameters 
 
-Run in triplicate : choose a file and split it in three chuncks : `split -l929328 SRR1754715.fastq boudin`. Check the number of sequences for each replicate with `grep` and `wc`(with a pipe) as seen previously. 
+Run in triplicate : choose a file and split it in three chuncks : `split -l929328 SRR1754715.fastq slice`. Check the number of sequences for each replicate with `grep` and `wc`(with a pipe) as seen previously. 
 
+Create your `param` file : ìpyrad -n test`creates param-test.txt. I've put an example in the github. 
 
 depth of coverage : for parameters [11] and [12] ; check and change parameter [13] accordingly. 
 1. 6 : the default
@@ -117,6 +118,9 @@ depth of coverage : for parameters [11] and [12] ; check and change parameter [1
 6. 500. 
 
 ### Result table (+/- SE)
+
+
+
 
 | [11] param   |var        | sum_var    |pis  sum_pis| He         |
 |--------------|-----------|------------|------------|------------|
