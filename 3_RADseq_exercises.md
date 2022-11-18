@@ -107,16 +107,36 @@ We'll look at the report and the outfiles. Please open the files named `pedicula
 
 Run in triplicate : choose a file and split it in three chuncks : `split -l929328 SRR1754715.fastq slice`. Check the number of sequences for each replicate with `grep` and `wc`(with a pipe) as seen previously. 
 
-Create your `param` file : `ipyrad -n test` creates `param-test.txt`. I've put an example in the github. Parameters by default, except of course paths. Let's make vary the depth of coverage for parameters [11] and [12] ; check and change parameter [13] accordingly. Since we have 3 slices, let's set [21] to 3. 
+Create your `param` file : `ipyrad -n test` creates `param-test.txt`. I've put an example in the github. Parameters by default, except of course paths. Let's make vary the depth of coverage for parameters [11] and [12] ; check and change parameter [13] accordingly. Since we have 3 slices, let's set [21] to 3. `ipyrad`needs a few minutes to perform the run using `ipyrad -p params-test.txt -s1234567 -r` and gives some info on the run (`-r`flag). Here is what's produced (all files starting with preffix `test` : 
+
+```
+epante@NORVEGE ~/D/pedicularis> ls -lrth
+total 64
+drwxr-xr-x   5 epante  staff   160B Nov 18 14:06 raw/
+-rw-r--r--   1 epante  staff   3.0K Nov 18 14:07 params-test.txt
+-rw-r--r--   1 epante  staff    79B Nov 18 14:07 test_s1_demultiplex_stats.txt
+drwxr-xr-x   6 epante  staff   192B Nov 18 14:07 test_edits/
+drwxr-xr-x   7 epante  staff   224B Nov 18 14:09 test_clust_0.85/
+drwxr-xr-x   9 epante  staff   288B Nov 18 14:09 test_consens/
+drwxr-xr-x  10 epante  staff   320B Nov 18 14:09 test_across/
+drwxr-xr-x   7 epante  staff   224B Nov 18 14:09 test_outfiles/
+-rw-r--r--   1 epante  staff    18K Nov 18 14:09 test.json
+
+`test.json`is produced during step one and is your assembly file (see manual). folders give result / data files for different steps (eg `test_outfiles`for step 7). the program provides a great roadmap to files at the end of the run : 
+
+```
+step 1: ./test_s1_demultiplex_stats.txt
+step 2: ./test_edits/s2_rawedit_stats.txt
+step 3: ./test_clust_0.85/s3_cluster_stats.txt
+step 4: ./test_clust_0.85/s4_joint_estimate.txt
+step 5: ./test_consens/s5_consens_stats.txt
+step 6: ./test_across/test_clust_database.fa
+step 7: ./test_outfiles/test_stats.txt
 
 ## Playing with the parameters 
 
-1. 6 : the default
-2. 12: double the default
-3. 24
-4. 50
-5. 100
-6. 500. 
+Let's keep all parameters as before but make the depth vary ([11] and [12]). Record the following information : 
+1. 
 
 ### Result table (+/- SE)
 
