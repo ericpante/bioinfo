@@ -219,12 +219,20 @@ Let's keep all parameters as before but make the depth vary ([11] and [12]). Rec
 3. heterozygocity (for your first slice; look at `s4_joint_estimate.txt`)
 4. error rate of basecalling (for your first slice; look at `s4_joint_estimate.txt`)
 
+To do this, `ipyrad` has a nice utility called branching. `ipyrad -p params-test.txt -b testcov12`will create a new "branch" called 'testcov12' with a new params called `params-testcov12.txt`. Change your coverage value in this new param file, and let's roll !
+
+```
+ipyrad -p params-testcov12.txt -s34567 -r -f
+```
+To do this, `ipyrad` has a nice utility called branching. `ipyrad -p params-test.txt -b testcov12`will create a new "branch" called 'testcov12' with a new params called `params-testcov12.txt`. Change your coverage value in this new param file, and let's roll !
+To do this, `ipyrad` has a nice utility called branching. `ipyrad -p params-test.txt -b testcov12`will create a new "branch" called 'testcov12' with a new params called `params-testcov12.txt`. Change your coverage value in this new param file, and let's roll !
+
 ### Result table
 
-|coverage  |n. loci   |SNPs   |He   |ER   |
-|----------|----------|-------|-----|-----|
-|6  |485   |112   |He   |ER   | 0.032509 | 0.003706|
-
+|coverage  |n. loci   |SNPs   |He        |ER.      |
+|----------|----------|-------|----------|---------|
+|6         |485       |112    | 0.032509 | 0.003706|
+|6         |485       |112    | 0.032509 | 0.003706|
 
 https://ipyrad.readthedocs.io/en/master/assembly_guidelines.html?highlight=error%20rate#what-parameters-have-the-biggest-effect-on-accuracy-of-genotypes-what-parameter-testing-should-be-done-with-a-new-taxon-or-dataset
 
