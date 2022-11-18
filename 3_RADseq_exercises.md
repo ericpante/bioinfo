@@ -216,14 +216,14 @@ To understand the results of this first run, we need to keep in mind that we spl
 Let's keep all parameters as before but make the depth vary ([11] and [12]). Record the following information : 
 1. the total number of retained loci (485 in previous example)
 2. the total number of variants (112 in previous example)
-3. heterozygocity (mean +:- SE for your three replicates)
-4. error rate of basecalling (mean +:- SE for your three replicates)
+3. heterozygocity (for your first slice; look at `s4_joint_estimate.txt`)
+4. error rate of basecalling (for your first slice; look at `s4_joint_estimate.txt`)
 
 ### Result table
 
 |coverage  |n. loci   |SNPs   |He   |ER   |
--------------------------------------------
-|
+|----------|----------|-------|-----|-----|
+|6  |485   |112   |He   |ER   | 0.032509 | 0.003706|
 
 
 https://ipyrad.readthedocs.io/en/master/assembly_guidelines.html?highlight=error%20rate#what-parameters-have-the-biggest-effect-on-accuracy-of-genotypes-what-parameter-testing-should-be-done-with-a-new-taxon-or-dataset
