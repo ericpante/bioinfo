@@ -121,6 +121,7 @@ drwxr-xr-x   9 epante  staff   288B Nov 18 14:09 test_consens/
 drwxr-xr-x  10 epante  staff   320B Nov 18 14:09 test_across/
 drwxr-xr-x   7 epante  staff   224B Nov 18 14:09 test_outfiles/
 -rw-r--r--   1 epante  staff    18K Nov 18 14:09 test.json
+```
 
 `test.json`is produced during step one and is your assembly file (see manual). folders give result / data files for different steps (eg `test_outfiles`for step 7). the program provides a great roadmap to files at the end of the run : 
 
@@ -132,6 +133,7 @@ step 4: ./test_clust_0.85/s4_joint_estimate.txt
 step 5: ./test_consens/s5_consens_stats.txt
 step 6: ./test_across/test_clust_database.fa
 step 7: ./test_outfiles/test_stats.txt
+```
 
 ## Playing with the parameters 
 
