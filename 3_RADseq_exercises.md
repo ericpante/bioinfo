@@ -98,6 +98,20 @@ Please open the `params-pedicularis.txt` and study the param file. We'll divide 
 
 Let's run ipyrad with the chosen parameters : 
 ```
-ipyrad -p params-pedicularis.txt -s 1234567 -r
+ipyrad -p params-pedicularis.txt -s 12 -r
+ipyrad -p params-pedicularis.txt -s 34567 -r
 ```
 We'll look at the report and the outfiles. Please open the files named `pedicularis_stats.txt` and `pedicularis.loci`. Now put your seatbelt on: we'll look at the `pedicularis.vcf` file. Here is the doc to read it: https://samtools.github.io/hts-specs/VCFv4.2.pdf. 
+
+## playing with the parameters 
+
+Run in triplicate : choose a file and split it in three chuncks 
+
+depth of coverage : for parameters [11] and [12]
+1. 6 : the default
+2. 12: double the default
+3. 9,999 the max ! 
+4. 100 just because
+5. 1,000 why not ??
+
+
