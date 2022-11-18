@@ -118,7 +118,7 @@ depth of coverage : for parameters [11] and [12] ; check and change parameter [1
 
 ### Result table (+/- SE)
 
-| [11] param   | n. loci   | n. SNPs.   | n. PI SNPs | He         |
+| [11] param   |var | sum_var  |  pis  sum_pis | He  |
 |--------------|-----------|------------|------------|------------|
 | 6            |           |            |            |            |
 | 12           |           |            |            |            |
