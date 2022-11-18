@@ -1,0 +1,50 @@
+##fileformat=VCFv4.0
+##fileDate=2017/02/14
+##source=ipyrad_v.0.7.28
+##reference=pseudo-reference (most common base at site)
+##phasing=unphased
+##INFO=<ID=NS,Number=1,Type=Integer,Description="Number of Samples With Dat
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total Depth">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth">
+##FORMAT=<ID=CATG,Number=1,Type=String,Description="Base Counts (CATG)">
+#CHROM  POS ID  REF ALT QUAL  FILTER  INFO  FORMAT  29154_superba 30556_thamno
+locus_1 2 . A C,G 13  PASS  NS=5;DP=49  GT:DP:CATG  0/0:9:0,9,0,0 1/1:7:7,0,0,0
+locus_1 3 . T A 13  PASS  NS=5;DP=49  GT:DP:CATG  0/0:9:0,0,9,0 1/1:7:0,7,0,0 0
+locus_1 19  . A G 13  PASS  NS=5;DP=49  GT:DP:CATG  0/0:9:0,9,0,0 1/1:7:0,0,0,7
+locus_1 21  . C T 13  PASS  NS=5;DP=49  GT:DP:CATG  1/1:9:0,0,9,0 0/0:7:7,0,0,0
+locus_1 30  . T C 13  PASS  NS=5;DP=49  GT:DP:CATG  0/0:9:0,0,9,0 0/0:7:0,0,7,0
+locus_1 36  . C T 13  PASS  NS=5;DP=49  GT:DP:CATG  0/0:9:9,0,0,0 1/1:7:0,0,7,0
+locus_2 15  . A G 13  PASS  NS=11;DP=210  GT:DP:CATG  0/0:12:0,12,0,0 0/0:24:0,2
+locus_2 16  . A T,C 13  PASS  NS=11;DP=210  GT:DP:CATG  0/0:12:0,12,0,0 0/0:24:0
+locus_2 18  . A T 13  PASS  NS=11;DP=210  GT:DP:CATG  0/0:12:0,12,0,0 0/0:24:0,2
+locus_2 20  . T C 13  PASS  NS=11;DP=210  GT:DP:CATG  1/1:12:12,0,0,0 0/0:24:0,0
+locus_2 29  . T C 13  PASS  NS=11;DP=209  GT:DP:CATG  0/0:12:0,0,12,0 0/0:23:0,0
+locus_2 30  . A G 13  PASS  NS=11;DP=209  GT:DP:CATG  0/0:12:0,12,0,0 0/0:23:0,2
+locus_2 47  . T A 13  PASS  NS=11;DP=210  GT:DP:CATG  0/0:12:0,0,12,0 0/0:24:0,0
+locus_3 46  . A T 13  PASS  NS=6;DP=69  GT:DP:CATG  1/1:10:0,0,10,0 ./.:0:0,0,0,
+locus_3 62  . C A 13  PASS  NS=6;DP=68  GT:DP:CATG  0/0:10:10,0,0,0 ./.:0:0,0,0,
+locus_6 11  . G A 13  PASS  NS=4;DP=67  GT:DP:CATG  1/1:11:0,11,0,0 0/0:7:0,0,0,
+locus_6 29  . G A 13  PASS  NS=4;DP=67  GT:DP:CATG  1/1:11:0,11,0,0 0/0:7:0,0,0,
+locus_6 34  . C A 13  PASS  NS=4;DP=67  GT:DP:CATG  1/1:11:0,11,0,0 0/0:7:7,0,0,
+locus_6 35  . G T 13  PASS  NS=4;DP=67  GT:DP:CATG  0/0:11:0,0,0,11 0/0:7:0,0,0,
+locus_6 40  . T C 13  PASS  NS=4;DP=67  GT:DP:CATG  0/0:11:0,0,11,0 1/1:7:7,0,0,
+locus_9 19  . A C 13  PASS  NS=13;DP=224  GT:DP:CATG  0/0:12:0,12,0,0 0/0:22:0,2
+locus_9 25  . A G 13  PASS  NS=13;DP=224  GT:DP:CATG  0/0:12:0,12,0,0 0/0:22:0,2
+locus_11  4 . C T 13  PASS  NS=10;DP=137  GT:DP:CATG  0/0:11:11,0,0,0 0/0:17:17,
+locus_11  13  . C T 13  PASS  NS=10;DP=137  GT:DP:CATG  1/1:11:0,1,10,0 0/0:17:17
+locus_11  21  . G A 13  PASS  NS=10;DP=137  GT:DP:CATG  0/0:11:0,0,0,11 0/0:17:0,
+locus_11  23  . A G 13  PASS  NS=10;DP=137  GT:DP:CATG  0/0:11:0,11,0,0 1/1:17:0,
+locus_11  24  . A T 13  PASS  NS=10;DP=137  GT:DP:CATG  1/1:11:0,0,11,0 0/0:17:0,
+locus_11  38  . G T 13  PASS  NS=10;DP=137  GT:DP:CATG  0/0:11:0,0,0,11 0/0:17:0,
+locus_11  42  . A G 13  PASS  NS=10;DP=137  GT:DP:CATG  0/0:11:0,11,0,0 0/0:17:0,
+locus_11  54  . A G 13  PASS  NS=10;DP=137  GT:DP:CATG  0/0:11:0,11,0,0 0/0:17:0,
+locus_11  55  . A G 13  PASS  NS=10;DP=137  GT:DP:CATG  0/0:11:0,11,0,0 0/0:17:0,
+locus_12  6 . C T 13  PASS  NS=7;DP=94  GT:DP:CATG  1/0:7:4,0,3,0 ./.:0:0,0,0,0
+locus_12  20  . C T 13  PASS  NS=7;DP=94  GT:DP:CATG  0/0:7:7,0,0,0 ./.:0:0,0,0,0
+locus_12  31  . T C 13  PASS  NS=7;DP=94  GT:DP:CATG  0/0:7:0,0,7,0 ./.:0:0,0,0,0
+locus_12  33  . G A 13  PASS  NS=7;DP=94  GT:DP:CATG  1/1:7:0,7,0,0 ./.:0:0,0,0,0
+locus_12  37  . G T 13  PASS  NS=5;DP=52  GT:DP:CATG  0/0:7:0,0,0,7 ./.:0:0,0,0,0
+locus_12  43  . C G 13  PASS  NS=7;DP=94  GT:DP:CATG  1/1:7:0,0,0,7 ./.:0:0,0,0,0
+locus_12  45  . G C,A 13  PASS  NS=7;DP=94  GT:DP:CATG  0/0:7:0,0,0,7 ./.:0:0,0,0
+locus_12  47  . G T 13  PASS  NS=7;DP=94  GT:DP:CATG  0/0:7:0,0,0,7 ./.:0:0,0,0,0
