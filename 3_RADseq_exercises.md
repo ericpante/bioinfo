@@ -230,7 +230,9 @@ ipyrad -p params-testcov12.txt -s34567 -r -f
 |coverage  |n. loci   |SNPs   |He        |ER.      |
 |----------|----------|-------|----------|---------|
 |6         |485       |112    | 0.032509 | 0.003706|
-|6         |485       |112    | 0.032509 | 0.003706|
+|12        |192       |27     | 0.061877 | 0.004702|
+|24        |110       |6      | 0.049671 | 0.004103|
+|36        |95        |4      | 0.035705 | 0.003387|
 
 https://ipyrad.readthedocs.io/en/master/assembly_guidelines.html?highlight=error%20rate#what-parameters-have-the-biggest-effect-on-accuracy-of-genotypes-what-parameter-testing-should-be-done-with-a-new-taxon-or-dataset
 
