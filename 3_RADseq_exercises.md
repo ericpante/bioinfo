@@ -127,4 +127,6 @@ depth of coverage : for parameters [11] and [12] ; check and change parameter [1
 | 100          |75         | 0          |75          | 0.007      |
 | 500          |0          |0           |0           |0           |
 
+    6    |     23    |    93      |     0      |     0      |  He : 0.03277
+
 
