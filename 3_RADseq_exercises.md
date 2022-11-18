@@ -219,20 +219,12 @@ Let's keep all parameters as before but make the depth vary ([11] and [12]). Rec
 3. heterozygocity (mean +:- SE for your three replicates)
 4. error rate of basecalling (mean +:- SE for your three replicates)
 
-### Result table (+/- SE)
+### Result table
+
+|coverage  |n. loci   |SNPs   |He   |ER   |
+-------------------------------------------
+|
 
 
-
-
-| [11] param   |var        | sum_var    |pis  sum_pis| He         |
-|--------------|-----------|------------|------------|------------|
-| 6            |           |            |            |            |
-| 12           |           |            |            |            |
-| 24           |           |            |            |            |
-| 50           | 1         | 3          | 0          | 0.027119   |
-| 100          |75         | 0          |75          | 0.007      |
-| 500          |0          |0           |0           |0           |
-
-    6    |     23    |    93      |     0      |     0      |  He : 0.03277
-
+https://ipyrad.readthedocs.io/en/master/assembly_guidelines.html?highlight=error%20rate#what-parameters-have-the-biggest-effect-on-accuracy-of-genotypes-what-parameter-testing-should-be-done-with-a-new-taxon-or-dataset
 
