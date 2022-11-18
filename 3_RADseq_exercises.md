@@ -124,7 +124,7 @@ depth of coverage : for parameters [11] and [12] ; check and change parameter [1
 | 12           |           |            |            |            |
 | 24           |           |            |            |            |
 | 50           | 3         |            |            |            |
-| 100          |           |            |            |            |
+| 100          |           | 0          |            | 0.007      |
 | 500          |           |            |            |            |
 
 
