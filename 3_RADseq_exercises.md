@@ -103,13 +103,13 @@ ipyrad -p params-pedicularis.txt -s 34567 -r
 ```
 We'll look at the report and the outfiles. Please open the files named `pedicularis_stats.txt` and `pedicularis.loci`. Now put your seatbelt on: we'll look at the `pedicularis.vcf` file. Here is the doc to read it: https://samtools.github.io/hts-specs/VCFv4.2.pdf. 
 
-## first run
+## First run
 
 Run in triplicate : choose a file and split it in three chuncks : `split -l929328 SRR1754715.fastq slice`. Check the number of sequences for each replicate with `grep` and `wc`(with a pipe) as seen previously. 
 
-Create your `param` file : ìpyrad -n test`creates param-test.txt. I've put an example in the github. Parameters by default, except of course paths. Let's make vary the depth of coverage for parameters [11] and [12] ; check and change parameter [13] accordingly. Since we have 3 slices, let's set [21] to 3. 
+Create your `param` file : `ipyrad -n test` creates `param-test.txt`. I've put an example in the github. Parameters by default, except of course paths. Let's make vary the depth of coverage for parameters [11] and [12] ; check and change parameter [13] accordingly. Since we have 3 slices, let's set [21] to 3. 
 
-## playing with the parameters 
+## Playing with the parameters 
 
 1. 6 : the default
 2. 12: double the default
