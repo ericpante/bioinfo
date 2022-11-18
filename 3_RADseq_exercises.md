@@ -209,12 +209,15 @@ slicesac      7     232330               230217           76846              589
 snps matrix size: (3, 112), 30.06% missing sites.
 sequence matrix size: (3, 32453), 0.36% missing sites.
 ```
-To understand the results of this first run, we need to keep in mind that we split one file (`SRR1754715.fastq`) containing 696,994 reads into three files (slices), which contain 232,332, 232,332, 232,330 reads, respectively. We expect that we will not hit all loci in all slices, because coverage will vary from one slice to the other. Keeping only loci shared among all three slices, we should expect that all genotypes are the same. SNPs are therefore either sequencing errors that we mistaken for alleles (eg coverage parameter set to low), missed alleles due to coverage parameter set too high (allele dropout). Please see Mastretta Yanes et al 2014 for details (doi: 10.1111/1755-0998.12291).
+To understand the results of this first run, we need to keep in mind that we split one file (`SRR1754715.fastq`) containing 696,994 reads into three files (slices), which contain 232,332, 232,332, 232,330 reads, respectively. We expect that we will not hit all loci in all slices, because coverage will vary from one slice to the other. Keeping only loci shared among all three slices, we should expect that all genotypes are the same. SNPs are therefore either sequencing errors that we mistaken for alleles (eg coverage parameter set to low), missed alleles due to coverage parameter set too high (allele dropout), or misassembly/alignment (eg inclusing of multi-copy region). Please see Mastretta Yanes et al 2014 for details (doi: 10.1111/1755-0998.12291).
 
 ## Playing with the parameters 
 
 Let's keep all parameters as before but make the depth vary ([11] and [12]). Record the following information : 
-1. 
+1. the total number of retained loci (485 in previous example)
+2. the total number of variants (112 in previous example)
+3. heterozygocity (mean +:- SE for your three replicates)
+4. error rate of basecalling (mean +:- SE for your three replicates)
 
 ### Result table (+/- SE)
 
