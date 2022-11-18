@@ -151,8 +151,11 @@ filtered_by_max_SNPs                   0             0          2252
 filtered_by_max_shared_het           232           232          2020
 filtered_by_min_sample              1535          1535           485
 total_filtered_loci                 1770          1770           485
+```
 
+We can see from the first table that 485 are retained in the final catalog, and that the biggest drop in the number of loci, while performing the analysis, occured when we asked for loci present in all three samples. Indeed, 1535 loci are lost at this step. 
 
+```
 ## The number of loci recovered for each Sample.
 ## ipyrad API location: [assembly].stats_dfs.s7_samples
 
@@ -160,8 +163,10 @@ total_filtered_loci                 1770          1770           485
 slicesaa              485
 slicesab              485
 slicesac              485
+```
+Sanity check : Same number of loci / sample. 
 
-
+```
 ## The number of loci for which N taxa have data.
 ## ipyrad API location: [assembly].stats_dfs.s7_loci
 
@@ -196,7 +201,7 @@ slicesac      7     232330               230217           76846              589
 ## Alignment matrix statistics:
 snps matrix size: (3, 112), 30.06% missing sites.
 sequence matrix size: (3, 32453), 0.36% missing sites.
-
+```
 
 
 ## Playing with the parameters 
