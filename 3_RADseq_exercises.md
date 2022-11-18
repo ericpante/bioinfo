@@ -135,6 +135,70 @@ step 6: ./test_across/test_clust_database.fa
 step 7: ./test_outfiles/test_stats.txt
 ```
 
+Let's have a look at `more test_stats.txt` ("Final stats file" in the ipyrad manual). 
+
+```
+epante@NORVEGE ~/D/p/test_outfiles> more test_stats.txt
+
+## The number of loci caught by each filter.
+## ipyrad API location: [assembly].stats_dfs.s7_filters
+
+                           total_filters applied_order retained_loci
+total_prefiltered_loci                 0             0          2255
+filtered_by_rm_duplicates              3             3          2252
+filtered_by_max_indels                 0             0          2252
+filtered_by_max_SNPs                   0             0          2252
+filtered_by_max_shared_het           232           232          2020
+filtered_by_min_sample              1535          1535           485
+total_filtered_loci                 1770          1770           485
+
+
+## The number of loci recovered for each Sample.
+## ipyrad API location: [assembly].stats_dfs.s7_samples
+
+          sample_coverage
+slicesaa              485
+slicesab              485
+slicesac              485
+
+
+## The number of loci for which N taxa have data.
+## ipyrad API location: [assembly].stats_dfs.s7_loci
+
+   locus_coverage  sum_coverage
+1               0             0
+2               0             0
+3             485           485
+
+
+The distribution of SNPs (var and pis) per locus.
+## var = Number of loci with n variable sites (pis + autapomorphies)
+## pis = Number of loci with n parsimony informative site (minor allele in >1 sample)
+## ipyrad API location: [assembly].stats_dfs.s7_snps
+## The "reference" sample is included if present unless 'exclude_reference=True'
+
+   var  sum_var  pis  sum_pis
+0  415        0  485        0
+1   40       40    0        0
+2   20       80    0        0
+3    9      107    0        0
+4    0      107    0        0
+5    1      112    0        0
+
+
+## Final Sample stats summary
+          state  reads_raw  reads_passed_filter  clusters_total  clusters_hidepth  hetero_est  error_est  reads_consens  loci_in_assembly
+slicesaa      7     232332               229906           77272              5913    0.032509   0.003706           4060               485
+slicesab      7     232332               229873           77115              5891    0.032176   0.003744           4066               485
+slicesac      7     232330               230217           76846              5895    0.032496   0.003622           4036               485
+
+
+## Alignment matrix statistics:
+snps matrix size: (3, 112), 30.06% missing sites.
+sequence matrix size: (3, 32453), 0.36% missing sites.
+
+
+
 ## Playing with the parameters 
 
 Let's keep all parameters as before but make the depth vary ([11] and [12]). Record the following information : 
