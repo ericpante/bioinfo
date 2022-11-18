@@ -192,9 +192,12 @@ The distribution of SNPs (var and pis) per locus.
 4    0      107    0        0
 5    1      112    0        0
 ```
-This is explained in the FAQ of the docs : https://ipyrad.readthedocs.io/en/master/faq.html?highlight=sum_var#how-do-i-interpret-the-distribution-of-snps-var-and-pis-per-locus-in-the-stats-txt-output-file
+This is explained in the FAQ of the docs : https://ipyrad.readthedocs.io/en/master/faq.html?highlight=sum_var#how-do-i-interpret-the-distribution-of-snps-var-and-pis-per-locus-in-the-stats-txt-output-file. For us : 
+1. There is no locus with parsimony-informative site (`pis`). 
+2. Most of the retained loci (485) are actually monomorphic ; which makes sense because our three samples are subsets of the same file. 
+3. There are 40 loci with 1 SNP, 20 loci with 2 SNPs, etc. In total, there are 112 SNPs (sum_var : 1x40+2x20+ ...). 
 
-
+```
 ## Final Sample stats summary
           state  reads_raw  reads_passed_filter  clusters_total  clusters_hidepth  hetero_est  error_est  reads_consens  loci_in_assembly
 slicesaa      7     232332               229906           77272              5913    0.032509   0.003706           4060               485
