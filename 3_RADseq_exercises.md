@@ -224,8 +224,6 @@ To do this, `ipyrad` has a nice utility called branching. `ipyrad -p params-test
 ```
 ipyrad -p params-testcov12.txt -s34567 -r -f
 ```
-To do this, `ipyrad` has a nice utility called branching. `ipyrad -p params-test.txt -b testcov12`will create a new "branch" called 'testcov12' with a new params called `params-testcov12.txt`. Change your coverage value in this new param file, and let's roll !
-To do this, `ipyrad` has a nice utility called branching. `ipyrad -p params-test.txt -b testcov12`will create a new "branch" called 'testcov12' with a new params called `params-testcov12.txt`. Change your coverage value in this new param file, and let's roll !
 
 ### Result table
 
