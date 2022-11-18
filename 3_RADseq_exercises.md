@@ -116,4 +116,15 @@ depth of coverage : for parameters [11] and [12] ; check and change parameter [1
 5. 100
 6. 500. 
 
+### Result table 
+
+| [11] param   | n. loci   | n. SNPs.   |
+|--------------|-----------|------------|
+| 6            |           |            |
+| 12           |           |            |
+| 24           |           |            |
+| 50           |           |            |
+| 100          |           |            |
+| 500          |           |            |
+
 
