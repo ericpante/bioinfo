@@ -225,7 +225,7 @@ To do this, `ipyrad` has a nice utility called branching. `ipyrad -p params-test
 ipyrad -p params-testcov12.txt -s34567 -r -f
 ```
 
-### Result table
+### Result table: varying coverage
 
 |coverage  |n. loci   |SNPs   |He        |ER.      |
 |----------|----------|-------|----------|---------|
@@ -236,3 +236,12 @@ ipyrad -p params-testcov12.txt -s34567 -r -f
 
 For more information on this topic : https://ipyrad.readthedocs.io/en/master/assembly_guidelines.html?highlight=error%20rate#what-parameters-have-the-biggest-effect-on-accuracy-of-genotypes-what-parameter-testing-should-be-done-with-a-new-taxon-or-dataset
 
+### Result table: varying clustering threshold
+
+|clustering|n. loci   |SNPs   |He        |ER.      |
+|----------|----------|-------|----------|---------|
+|99%       |       |    |  | |
+|98%       |       |     | | |
+|95%       |       |      |  | |
+|90%       |        |      |  | |
+|85%       |485       |112    | 0.032509 | 0.003706|
