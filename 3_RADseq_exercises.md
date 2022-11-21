@@ -240,7 +240,7 @@ For more information on this topic : https://ipyrad.readthedocs.io/en/master/ass
 
 |clustering|n. loci   |SNPs   |He        |ER.      |
 |----------|----------|-------|----------|---------|
-|99%       |          |       |          |         |
+|99%       |766       |0      |0.000825  |0.000131 |
 |98%       |          |       |          |         |
 |95%       |  627     |  199  | 0.008869 | 0.001766|
 |90%       |          |       |          |         |
