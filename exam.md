@@ -21,4 +21,4 @@ Install and test FastQC and the blast toolkit. Retrieve and set-up the ncbi ITS 
 
 ## Exercice 2. 
 
-Use the cleaned data from exercise 1 to run ipyrad. Install ipyrad and dependencies. create a `params` file for SE sdRAD reads obtained using Pst1. Construct a catalog of loci that are match the following conditions (...). Explain the why the number of recruited loci differs among the parameter values used for depth of coverage and percent similarity.
+Use the cleaned data from exercise 1 to run `ipyrad`. Install `ipyrad` and dependencies. Create a `params` file for SE sdRAD reads obtained using Pst1. Construct a catalog of loci that match the following conditions (...). Explain the why the number of recruited loci differs among the parameter values used for depth of coverage and percent similarity.
