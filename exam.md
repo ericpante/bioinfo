@@ -9,7 +9,7 @@ Please add your scripts as separate files in the GitHub repository. All code mus
 - `FastQC` is here: http://www.usadellab.org/cms/?page=trimmomatic
 - `ipyrad` manual is here: https://ipyrad.readthedocs.io/en/master/ 
 - the `markdown` guide is here: https://www.markdownguide.org
-- Github is this site :-)
+- GitHub is this site :-)
 
 ## Useful tips
 
