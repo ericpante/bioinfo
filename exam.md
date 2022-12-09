@@ -6,7 +6,8 @@ Please add your scripts as separate files in the GitHub repository. All code mus
 ## Useful links
 - NCBI tools and databases are here: https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
 - Trimmomatic is here: http://www.usadellab.org/cms/?page=trimmomatic
-- FastQC is here: http://www.usadellab.org/cms/?page=trimmomatic
+- FastQC is here: [http://www.usadellab.org/cms/?page=trimmomatic]
+- ipyrad manual is here: https://ipyrad.readthedocs.io/en/master/ 
 
 ## Exercise 1. 
 
