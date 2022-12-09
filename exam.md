@@ -11,7 +11,7 @@ Please add your scripts as separate files in the GitHub repository. All code mus
 
 ## Useful tips
 
-Set up you working directory as such: '~/bioinfo`is your main directory. `~/bioinfo/rawdata` contains the `fastq` downloaded and unzipped form ncbi. `~/bioinfo/cleandata` contains reads sorted by `trimmomatic`. the `FastQC` files can be stored in the directory corresponding to its iput `fastq` files. 
+Set up you working directory as such: ~/bioinfo`is your main directory. `~/bioinfo/rawdata` contains the `fastq` downloaded and unzipped form ncbi. `~/bioinfo/cleandata` contains reads sorted by `trimmomatic`. the `FastQC` files can be stored in the directory corresponding to its iput `fastq` files. 
 
 ## Exercise 1. 
 
