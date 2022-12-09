@@ -6,12 +6,12 @@ Please add your scripts as separate files in the GitHub repository. All code mus
 ## Useful links
 - NCBI tools and databases are here: https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
 - `trimmomatic` is here: http://www.usadellab.org/cms/?page=trimmomatic
-- `FastQC` is here: [http://www.usadellab.org/cms/?page=trimmomatic]
+- `FastQC` is here: http://www.usadellab.org/cms/?page=trimmomatic
 - `ipyrad` manual is here: https://ipyrad.readthedocs.io/en/master/ 
 
 ## Useful tips
 
-Set up you working directory as such: `~/bioinfo` is your main directory. `~/bioinfo/rawdata` contains the `fastq` downloaded and unzipped form ncbi. `~/bioinfo/cleandata` contains reads sorted by `trimmomatic`. the `FastQC` files can be stored in the directory corresponding to its iput `fastq` files. `~/bioinfo/noITS` contains cleaned reads without ITS sequences (your input for Ex. 2). ~/bioinfo/ipyrad` contains your ipyrad analysis; set up your subdirectories as proposed in the `ipyrad` manual
+You may want to work from the informatics lab or from a live ubuntu USB session, but make sure your code runs in the informatics lab. Get a `bash shell cheat sheet to help you. Set up you working directory as such: `~/bioinfo` is your main directory. `~/bioinfo/rawdata` contains the `fastq` downloaded and unzipped form ncbi. `~/bioinfo/cleandata` contains reads sorted by `trimmomatic`. the `FastQC` files can be stored in the directory corresponding to its iput `fastq` files. `~/bioinfo/noITS` contains cleaned reads without ITS sequences (your input for Ex. 2). ~/bioinfo/ipyrad` contains your ipyrad analysis; set up your subdirectories as proposed in the `ipyrad` manual. 
 
 ## Exercise 1. 
 
