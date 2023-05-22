@@ -1,7 +1,7 @@
 # REDO EXAM - BIOINFORMATICS
 
 You must create a GitHub account and invite `ericpante` to it. Please prepare a main file in MarkDown to explain your answers and provide your code. 
-Please add your scripts as separate files in the GitHub repository. All code must be able to run on ubuntu linux, as set up in the informatics labs at IUEM. The raw data consist in the first three files from the SRA project n. SRP021469. 
+Please add your scripts as separate files in the GitHub repository. All code must be able to run on ubuntu linux, as set up in the informatics labs at IUEM. The raw data consist in the last three files from the SRA project n. SRP021469. 
 
 ## Useful links
 - NCBI tools and databases are here: https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
