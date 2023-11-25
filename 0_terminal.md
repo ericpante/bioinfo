@@ -95,7 +95,7 @@ Analysis complete for SRR1754715.fastq
 epante@NORVEGE ~/D/bioinfo> 
 ```
 
-running the app from the terminal has the advantage of allowing batch analysis of files : consider the following script called `batch_fqc.sh`, calling the sub-routine `run_fastqc.sh`:
+running the app from the terminal has the advantage of allowing batch analysis of files : consider the following script called `batch_fqc.sh`, calling the sub-routine `run_fastqc.sh` (please read through and look at the different scripts and subscripts prior to executing):
 
 ```#!/bin/bash
 
