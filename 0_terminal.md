@@ -139,12 +139,12 @@ https://github.com/ericpante/bioinfo/blob/main/parsing_fastqc.sh
 
 ### other handy scripts for `fastq` manipulation
 
-an example of file format convertion from `fastq`to `fasta` using `sed`:
+an example of file format convertion from `fastq`to `fasta` using `grep`and `sed`:
 ```
 #!/bin/bash
 grep -A1 "@SRR*" $1 | sed 's/@SRR/>SRR/g' | sed '/--/d'
 ```
-
+what does the `-A1`argument does ? why use two `sed` calls? 
 an example of batch calculation of sequence numbers from the `fastq` file format:
 ```
 #!/bin/bash
