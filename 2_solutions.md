@@ -22,7 +22,7 @@ We created three scripts, which will work in concert. `parsing_fastqc.sh` parses
 
 ## Exercise 4
 
-Parsing a vcf file and keep variants according to the number of alleles (a) within individuals, (b) among individuals: [here is a solution](https://github.com/ericpante/bioinfo/blob/main/3_RADseq_exercises.md) proposed by Rachel and Manon from Bioinformatics2023. 
+Parsing a vcf file and keep variants according to the number of alleles (a) within individuals, (b) among individuals: [here is a solution](https://github.com/ericpante/bioinfo/blob/main/3_Solution_Ex4.md) proposed by Rachel and Manon from Bioinformatics2023. 
 
 ## Exercise 5
 
