@@ -19,3 +19,11 @@ bash get_sequence_number_batch.sh ./saucisson/SRR1754715_* # run script
 ## Exercise 3
 
 We created three scripts, which will work in concert. `parsing_fastqc.sh` parses the output of fastqc into a tabular format and returns it in standard output. `run_fastq.sh` launches fastqc, unzips the output and calls `parsing_fastqc.sh` that performs the parsing. The `batch_fastqc.sh`script is a module to use `run_fastq.sh` in batch mode, ie to parse multiple fastq files from a folder. All three scripts are in the `bioinfo/ folder. 
+
+## Exercise 4
+
+Parsing a vcf file and keep variants according to the number of alleles (a) within individuals, (b) among individuals: [here is a solution](https://github.com/ericpante/bioinfo/blob/main/3_RADseq_exercises.md) proposed by Rachel and Manon from Bioinformatics2023. 
+
+## Exercise 5
+
+[Here is a solution](https://github.com/ericpante/bioinfo/blob/main/5_solution_ex5.md) proposed by Rachel and Manon from Bioinformatics2023. 
