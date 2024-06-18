@@ -3,7 +3,7 @@
 ## getting started and basic commands
 
 if you need to install software on ubuntu, check out `apt-get` https://doc.ubuntu-fr.org/apt-get. 
-to ease your work, consider installing `homebrew` (https://docs.brew.sh/Homebrew-on-Linux) and `fish` (https://fishshell.com). 
+to ease your work, consider installing `homebrew` (https://docs.brew.sh/Homebrew-on-Linux) and `fish` (https://fishshell.com). If you are on a mac, check out `iterm2`.
 
 work in class - getting acquainted with the following commands:
 - getting the docs: `man` (enter `q`to quit the manual)
