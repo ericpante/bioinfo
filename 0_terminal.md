@@ -7,10 +7,10 @@ to ease your work, consider installing `homebrew` (https://docs.brew.sh/Homebrew
 
 work in class - getting acquainted with the following commands:
 - getting the docs: `man` (enter `q`to quit the manual)
-- nagivating across folders: `pwd`, `ls`, `cd`, `tree`, `du -h`
+- nagivating across folders: `pwd`, `ls`, `ll`, `cd`, `tree`, `du -h`
 - creating a file: `touch`, redirecting standard output with `>`, creating folder `mkdir`
 - copying `cp` and `tee`, moving `mv`, removing `rmdir`, `rm`
-- printing the content of a file: `cat` for zipped files : `zcat`
+- printing the content of a file: `cat` for zipped files : `zcat`, `zmore`
 - understanding and changing file permissions (`chmod`)
 - working with archives: `tar` and tarballs
 - compressing `gzip` and decompressing `gunzip`
