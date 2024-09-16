@@ -1,4 +1,5 @@
-# EXAM 2023 - BIOINFORMATICS
+# EXAM BIOINFORMATICS
+## rattrapage 2024
 
 You must have created a GitHub account and invited `ericpante` to it. Please prepare a main file in MarkDown to explain your answers and provide your code. 
 Please add your scripts as separate files in the GitHub repository. All code must be able to run on ubuntu linux, as set up in the informatics labs at IUEM. The raw data consist in the last three files from the SRA project n. SRP021469. 
