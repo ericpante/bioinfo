@@ -19,8 +19,12 @@ check that it is loaded and ready to run with the following command:
 ```
 fastqc -h # displays the help page for fastqc
 ```
+Checkout the tools for analyzinf RADseq data with `module search rad`, which should return, among others, `ipyrad/0.9.95` and `stacks/2.65`.
 
+### lauching jobs and checking results
 
+### cluster use for population genomics
 
+Stacks2 [tutorial](https://gist.github.com/Astahlke/bb9db6bee8bd225ee35353e47f4f2f9f) by [Amanda Stahlke](https://gist.github.com/Astahlke) from 2019 Conservation Genetics workshop. The dataset was published [here](https://moodlemer.univ-brest.fr/moodle/pluginfile.php/82126/mod_resource/content/0/Stahlke_etal_2021_Diorhabda.pdf). The draft reference genome (Acc SAMN23038877) is [here](https://www.ncbi.nlm.nih.gov/biosample/SAMN23038877/) and the raw reads (BioProject Acc PRJNA728708) are [here](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA728708).  
 
 
