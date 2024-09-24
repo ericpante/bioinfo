@@ -9,6 +9,8 @@ ssh tpxxxxxx@core.cluster.france-bioinformatique.fr
 ```
 Replace the "x" by your account number. The cluster documentation is [here](https://ifb-elixirfr.gitlab.io/cluster/doc/quick-start/).
 
+The data is in a shared folder located here : `/shared/projects/tp_tps_iuem_bioinfo_166600`
+
 ### loading toolbox
 
 Tools are conveniently packaged as "modules". Checkout the list of modules using `module avail`. To work with `fastqc`, load the module as follows: 
