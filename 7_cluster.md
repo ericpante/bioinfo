@@ -25,6 +25,12 @@ Checkout the tools for analyzinf RADseq data with `module search rad`, which sho
 
 ### cluster use for population genomics
 
-Stacks2 [tutorial](https://gist.github.com/Astahlke/bb9db6bee8bd225ee35353e47f4f2f9f) by [Amanda Stahlke](https://gist.github.com/Astahlke) from 2019 Conservation Genetics workshop. The dataset was published [here](https://moodlemer.univ-brest.fr/moodle/pluginfile.php/82126/mod_resource/content/0/Stahlke_etal_2021_Diorhabda.pdf). The draft reference genome (Acc SAMN23038877) is [here](https://www.ncbi.nlm.nih.gov/biosample/SAMN23038877/) and the raw reads (BioProject Acc PRJNA728708) are [here](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA728708).  
+Stacks2 [tutorial](https://gist.github.com/Astahlke/bb9db6bee8bd225ee35353e47f4f2f9f) by [Amanda Stahlke](https://gist.github.com/Astahlke) from 2019 Conservation Genetics workshop. The dataset was published [here](https://moodlemer.univ-brest.fr/moodle/pluginfile.php/82126/mod_resource/content/0/Stahlke_etal_2021_Diorhabda.pdf). The draft reference genome (Acc SAMN23038877) is [here](https://www.ncbi.nlm.nih.gov/biosample/SAMN23038877/) and the raw reads (BioProject Acc PRJNA728708) are [here](https://www.ncbi.nlm.nih.gov/sra/?term=PRJNA728708). We will focus on this part of the dataset, called SRR14527637, and 
 
+Get the data with [sratool](https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump)
+```
+module load sra-tools/3.1.0
+prefetch SRR14527637
+fasterq-dump SRR14527637
+```
 
