@@ -11,14 +11,14 @@ work in class - getting acquainted with the following commands:
 - creating a file: `touch`, redirecting standard output with `>`, creating folder `mkdir`
 - copying `cp` and `tee`, moving `mv`, removing `rmdir`, `rm`
 - printing the content of a file: `cat` for zipped files : `zcat`, `zmore`
-- understanding and changing file permissions (`chmod`)
+- understanding and changing file permissions (`chmod`) (eg. `chmod a+x seitan.sh`)
 - working with archives: `tar` and tarballs
 - compressing `gzip` and decompressing `gunzip`
 - file download: `wget`
 - wildcards (characters with special meanings) and globbing: `?`, `*`, `!`, `[...]`...
 - piping: `|`
-- scripting: `.sh`
-- variables: `$PATH`, `$HOME`, `$1`, `$@`...
+- scripting: `.sh` (shebang bash : `#!/bin/bash`)
+- variables: `$PATH`, `$HOME`, `$1`, `$@` (eg `DESKTOP=$HOME/Bureau` and `echo $DESKTOP`) 
 
 ## getting `fastq`data
 
