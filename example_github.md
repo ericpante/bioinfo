@@ -7,3 +7,4 @@
 5. changer le nom de `saucisson.txt` en `seitan.txt`
 6. afficher le contenu de `seitan.txt`
 
+[Fini ?](https://app.sli.do/event/moZ6H6bUEEaPAFE3P3J7Xv) #3064830
