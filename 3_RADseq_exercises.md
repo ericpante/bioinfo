@@ -12,7 +12,8 @@ Connect to the cluster using the information in [7_cluster.md](https://github.co
 Then reserve a node for interactive use 
 ```
 srun --mem=50G --pty bash
-module load ipyrad/0.9.95
+module load ipyrad/0.9.84
+# module load ipyrad/0.9.95 # causes problems ...
 ```
 You can move to the section entitled "Getting the data through ipyrad"
 
