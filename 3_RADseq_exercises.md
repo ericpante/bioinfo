@@ -6,6 +6,16 @@ Eaton DAR, Overcast I. ipyrad: Interactive assembly and analysis of RADseq datas
 
 Eaton DAR, Ree RH. Inferring Phylogeny and Introgression using RADseq Data: An Example from Flowering Plants (Pedicularis: Orobanchaceae), Systematic Biology, Volume 62, Issue 5, September 2013, Pages 689–706, https://doi.org/10.1093/sysbio/syt032
 
+## Using the IFB cluster
+
+Connect to the cluster using the information in [7_cluster.md](https://github.com/ericpante/bioinfo/blob/main/7_cluster.md) (`ssh` connection). 
+Then reserve a node for interactive use 
+```
+srun --mem=50G --pty bash
+module load ipyrad/0.9.95
+```
+You can move to the section entitled "Getting the data through ipyrad"
+
 ## Setting up your workstation
 
 1. On the university computers, log into Ubuntu. Alternatively, run your live Lubuntu from your USB drive. 
@@ -52,7 +62,7 @@ Now let's set the scene for the analysis.
 
 We will see in lecture how we can build different library types to get more sequence data from one run. Different libraries can have single-end (SE) reads, paired-end (PE) reads, reads with mated-pairs (MP). We will also review the different flavors of RAD (eg. sdRAD, ddRAD, etc.). 
 
-## Getting the raw data through the SRA-toolkit (for information only - please don't run this-)
+## Getting publicly avaible raw data through the SRA-toolkit (for information only - please don't run this-)
 
 Let's get the data from SRA using their toolkit. Here is the SRA link : https://www.ncbi.nlm.nih.gov/sra. Here is the accession number : SRP021469. Get the `SRR_Acc_List.txt` to use with the toolkit
 
@@ -81,20 +91,32 @@ prefetch ACCESSION ## or --option-file SRR_Acc_List.txt for a list
 fastq-dump ACCESSION ACCESSION ACCESSION ACCESSION ...
 ```
 
-## Getting the data through ipyrad
+## Getting SRA data through ipyrad
 
 ipyrad has a wrapper to fetch the data from SRA. Use the following command to get the Eaton and Ree data. 
 ```
-ipyrad --download SRP021469 rawdata/
+ipyrad --download SRP021469 filtered/
 ```
 
-## Running the ipyrad analysis workflow
+These files are already demultiplexed and will be used for the exam. 
 
-Now set up a new assembly named after the biological model system: 
+## Running the ipyrad analysis workflow on raw, multiplexed data
+
+To run the pipeline, lets try `ipyrad` on multiplexed data.
+```
+cd $HOME/ipyrad/rawdata                                 # go into your rawdata folder
+curl -LkO https://eaton-lab.org/data/ipsimdata.tar.gz   # download the data
+tar -xvzf ipsimdata.tar.gz                              # unarchive the data
+gunzip -c ./ipsimdata/rad_example_R1_.fastq.gz | head -n 12  # unzip rad data and look at first 12 lines
+cat ./ipsimdata/rad_example_barcodes.txt                # look at the barcode file for demultiplexing
+```
+
+
+Set up a new assembly named after the biological model system: 
 ```
 ipyrad -n pedicularis
 ```
-Please open the `params-pedicularis.txt` and study the param file. We'll divide up the steps and the params among us, and in 15' we'll each take turn to explain to the others how the "our parameter" works. 
+Please open the `params-pedicularis.txt` and study the param file. We'll divide up the steps and the params among us, and in 15' we'll each take turn to explain to the others how the [parameters](https://ipyrad.readthedocs.io/en/master/6-params.html) works. 
 
 Let's run ipyrad with the chosen parameters : 
 ```
