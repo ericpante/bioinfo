@@ -126,12 +126,21 @@ $HOME/ipyrad/rawdata/ipsimdata/rad_example_R1_.fastq.gz  ## [2] [raw_fastq_path]
 $HOME/ipyrad/rawdata/ipsimdata/rad_example_barcodes.txt  ## [3] [barcodes_path]: Location of barcodes file```
 ```
 
-
-Let's run ipyrad with the chosen parameters : 
+Let's run ipyrad with the chosen parameters ; step 1 is demultiplexing
 ```
-ipyrad -p params-pedicularis.txt -s 12 -r
+ipyrad -p params-pedicularis.txt -s 1
+ipyrad -p params-pedicularis.txt -r # to look at the summary stats of step1
+cat ./pedicularis_fastqs/s1_demultiplex_stats.txt # for full stats
+```
+Filter reads : 
+```
+ipyrad -p params-pedicularis.txt -s 2 -r
+```
+Steps 3 to 7: 
+```
 ipyrad -p params-pedicularis.txt -s 34567 -r
 ```
+
 We'll look at the report and the outfiles. Please open the files named `pedicularis_stats.txt` and `pedicularis.loci`. Now put your seatbelt on: we'll look at the `pedicularis.vcf` file. Here is the doc to read it: https://samtools.github.io/hts-specs/VCFv4.2.pdf. 
 
 ## First run
