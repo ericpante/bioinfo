@@ -111,12 +111,20 @@ gunzip -c ./ipsimdata/rad_example_R1_.fastq.gz | head -n 12  # unzip rad data an
 cat ./ipsimdata/rad_example_barcodes.txt                # look at the barcode file for demultiplexing
 ```
 
-
 Set up a new assembly named after the biological model system: 
 ```
 ipyrad -n pedicularis
 ```
 Please open the `params-pedicularis.txt` and study the param file. We'll divide up the steps and the params among us, and in 15' we'll each take turn to explain to the others how the [parameters](https://ipyrad.readthedocs.io/en/master/6-params.html) works. 
+
+Make sure to specify the right paths for the raw data and the barcode file:
+```
+pedicularis                    ## [0] [assembly_name]: Assembly name. Used to name output directories for assembly steps
+$HOME/ipyrad/rawdata           ## [1] [project_dir]: Project dir (made in curdir if not present)
+$HOME/ipyrad/rawdata/ipsimdata/rad_example_R1_.fastq.gz  ## [2] [raw_fastq_path]: Location of raw non-demultiplexed fastq files
+$HOME/ipyrad/rawdata/ipsimdata/rad_example_barcodes.txt  ## [3] [barcodes_path]: Location of barcodes file```
+```
+
 
 Let's run ipyrad with the chosen parameters : 
 ```
