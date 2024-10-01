@@ -11,7 +11,7 @@ Eaton DAR, Ree RH. Inferring Phylogeny and Introgression using RADseq Data: An E
 Connect to the cluster using the information in [7_cluster.md](https://github.com/ericpante/bioinfo/blob/main/7_cluster.md) (`ssh` connection). 
 Then reserve a node for interactive use 
 ```
-srun --mem=50G --pty bash
+srun -A tp_tps_iuem_bioinfo_166600 --mem=50G --pty bash
 module load ipyrad/0.9.84
 # module load ipyrad/0.9.95 # causes problems ...
 ```
