@@ -89,7 +89,7 @@ curl -sG "https://www.ebi.ac.uk/ena/browser/api/fasta/textsearch" \
 
 Now can you run the same query by limiting the sequences from _M. balthica_ sampled in France? 
 
-## getting `fastq`data
+## getting `fastq`data using the `sratoolkit`
 
 have a look at the NIH Small Read Archive: https://www.ncbi.nlm.nih.gov/sra/?term=SRR1754715 
 SRR1754715 is a `fastq` file from SRA (RADseq Pedicularis sect. Cyathophora). you can get the data manually through the SRA interface but we are going to do it through the terminal. 
