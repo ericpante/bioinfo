@@ -14,11 +14,54 @@ work in class - getting acquainted with the following commands:
 - understanding and changing file permissions (`chmod`) (eg. `chmod a+x seitan.sh`)
 - working with archives: `tar` and tarballs
 - compressing `gzip` and decompressing `gunzip`
-- file download: `wget`
 - wildcards (characters with special meanings) and globbing: `?`, `*`, `!`, `[...]`...
 - piping: `|`
 - scripting: `.sh` (shebang bash : `#!/bin/bash`)
 - variables: `$PATH`, `$HOME`, `$1`, `$@` (eg `DESKTOP=$HOME/Bureau` and `echo $DESKTOP`) 
+
+## getting data using `ftp`, `http` and `api`
+
+
+We'll use the European Nucleotide Archive [ENA](https://www.ebi.ac.uk/ena/browser/home), and will practice downloading using the phage lambda genome. 
+The accession for the E. coli lambda phage nt sequence is [J02459.1](https://www.ebi.ac.uk/ena/browser/view/J02459). Let's retrieve files programmatically. The [api browser from ENA](https://www.ebi.ac.uk/ena/browser/api/swagger-ui/index.html#/content-controller/getFasta) will help you get the command line you want.
+
+Common tools to retrieve files are `wget` and `curl`:
+```
+wget https://www.ebi.ac.uk/ena/browser/api/fasta/J02459.1
+curl -O https://www.ebi.ac.uk/ena/browser/api/fasta/J02459.1
+```
+The `-O`option saves the file using its original name on the server. In a nutshell, `curl` is more flexible, especially for APIs and scripting; `wget` is simpler and better for bulk downloads and mirroring entire directories. Let's focus on `curl`.
+
+The commands connects to ENA through `http`, and invokes its `api`, asking for a specific file. Let's ask for multiple files. Let's look for all DNA sequences for _Macoma balthica_, and output the first two results : 
+
+```
+ curl -X 'GET' 'https://www.ebi.ac.uk/ena/browser/api/fasta/textsearch?result=sequence&query=Macoma%20AND%20balthica%20cox1&offset=0&limit=2&gzip=false&complement=false' -H 'accept: text/plain'
+```
+we get : 
+```
+>ENA|EF044128|EF044128.1 Macoma balthica haplotype 29 cytochrome c oxidase subunit I (COX1) gene, partial cds; mitochondrial.
+GGTATACAGGACTATAATGCGTACAGAGTTGATACACCCAGGTTCTTTCTATGGTGAGTC
+AGTTTATAATGTTTTAGTGACTTCACATGGTTTACTAATAATTTTTTTTATAGTAATGCC
+TTTAATAATTGGATTTTTTGGTAATTGGGCTGTTCCCCTTTTATTAGCTGCACCTGATAT
+GGTTTTTGCTCGTCTTAATAATCTTAGCTTCTGGTTGCTTCCTGCGGCTACTATTTTATT
+GCTAATATCTAATGAAGTGGAGGAAGGAGTTGGGACGGGTTGAACACTCTACCCCCCTTT
+ATCTGCTTGGTTAGGTCATCCTGCCCCAGCGATGGAGTTTATAATTTTAGGCTTGCATAT
+TGCTGGAATATCTTCTATTTTTGCAAGAATTAATTTCGTAACTACAGGTGCTAATATGCG
+CCCTGAGGGGGTGGCTCCTCAGCGAACTACCTTGTTTGTGGTCTCAGTGGTAATTACATC
+ATTTTTACTAGTGGTTGCCATACCTGTACTAGCTGCCGGTTTAACTATACTTCTTACTGA
+CCGAAATTTTAATACTTCTTTTTTTGACCCGGT
+>ENA|EF044133|EF044133.1 Macoma balthica haplotype 41 cytochrome c oxidase subunit I (COX1) gene, partial cds; mitochondrial.
+GGTATACAGGACTATAATACGTACAGAGTTAATACATCCAGGTTCTTTCTATGGCGAGTC
+AGTTTATAATGTTTTAGTGACTTCACACGGTTTGCTAATAATTTTTTTTATGGTAATGCC
+TTTAATAATTGGATTTTTTGGTAATTGGGCTGTCCCTCTTTTATTAGCTGCACCTGATAT
+GGTTTTTGCTCGTCTTAATAATCTTAGCTTCTGGTTACTTCCTGCAGCTACTATCTTGTT
+ACTAATATCTAATGAAGTGGAGGAAGGGGTTGGGACAGGTTGAACACTTTACCCCCCTTT
+ATCTGCTTGGTTAGGTCATCCTGCCCCAGCGATGGAGTTTATGATTTTAGGTTTACATAT
+TGCTGGAATATCTTCTATTTTCGCAAGAATTAATTTCGTAACTACAGGTGCTAACATGCG
+ACCTGAGGGGGTGGCTCCTCAGCGAACTACTTTGTTTGTGGTTTCAGTAGTAATTACATC
+ATTTTTACTGGTGGTTGCTATACCTGTACTAGCTGCTGGATTAACTATACTTCTAACTGA
+CCGAAATTTTAATACTTCTTTTTTTGACCCGGT
+
 
 ## getting `fastq`data
 
