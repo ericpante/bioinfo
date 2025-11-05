@@ -37,7 +37,7 @@ The commands connects to ENA through `http`, and invokes its `api`, asking for a
 ```
  curl -X 'GET' 'https://www.ebi.ac.uk/ena/browser/api/fasta/textsearch?result=sequence&query=Macoma%20AND%20balthica%20cox1&offset=0&limit=2&gzip=false&complement=false' -H 'accept: text/plain'
 ```
-we get : 
+This is the line that the ENI API browser is proposing. We get : 
 ```
 >ENA|EF044128|EF044128.1 Macoma balthica haplotype 29 cytochrome c oxidase subunit I (COX1) gene, partial cds; mitochondrial.
 GGTATACAGGACTATAATGCGTACAGAGTTGATACACCCAGGTTCTTTCTATGGTGAGTC
@@ -62,6 +62,32 @@ ACCTGAGGGGGTGGCTCCTCAGCGAACTACTTTGTTTGTGGTTTCAGTAGTAATTACATC
 ATTTTTACTGGTGGTTGCTATACCTGTACTAGCTGCTGGATTAACTATACTTCTAACTGA
 CCGAAATTTTAATACTTCTTTTTTTGACCCGGT
 ```
+Which is what we want. What it means: 
+
+| Element                              | Meaning                                         |
+| ------------------------------------ | ----------------------------------------------- |
+| `-X 'GET'`                           | HTTP method (retrieve data)                     |
+| `textsearch`                         | Search by keyword                               |
+| `result=sequence`                    | Return DNA/RNA records                          |
+| `query=Macoma AND balthica AND cox1` | Search term                                     |
+| `offset=0` / `limit=2`               | Pagination (start + count)                      |
+| `-H 'accept: text/plain'`            | Ask for FASTA, not HTML                         |
+| Output                               | FASTA sequences for *Macoma balthica* COX1 gene |
+
+We can make it more legible using the `--data-urlencode` option of `curl`. It automatically encodes spaces as %20, prevents query parsing errors, and keeps scripts readable and reusable. 
+
+```
+curl -sG "https://www.ebi.ac.uk/ena/browser/api/fasta/textsearch" \
+  --data-urlencode "result=sequence" \
+  --data-urlencode "query=Macoma AND balthica AND cox1" \
+  --data-urlencode "offset=0" \
+  --data-urlencode "limit=2" \
+  --data-urlencode "gzip=false" \
+  --data-urlencode "complement=false" \
+  -H "accept: text/plain"
+```
+
+Now can you run the same query by limiting the sequences from _M. balthica_ sampled in France? 
 
 ## getting `fastq`data
 
