@@ -27,7 +27,7 @@ make use of bash-defined variables.
 
 ## Exercise 2
 
-*use saucisson <-> seitan according to yout preferences.*
+*use saucisson <-> seitan according to your preferences.*
 
 1. create a directory called `saucisson`. 
 2. in `saucisson` : split the file in x files containing 10,000 sequences (not lines) each. 
