@@ -113,11 +113,17 @@ export PATH=$PATH:$PWD/sratoolkit.3.0.0-xxx/bin # xxx: replace by your version.
 which fastq-dump
 ```
 
-Now we can use the kit to get multiple SRR data files. 
+Now we can use the kit to get multiple SRR data files. Since you have a single ACCESSION (replace ACCESSION by whatever accession number you want) to download, type: 
 ```
-prefetch ACCESSION ## or --option-file SRR_Acc_List.txt for a list
-fastq-dump ACCESSION ACCESSION ACCESSION ACCESSION ...
+prefetch ACCESSION
+fastq-dump ACCESSION
 ```
+If you want to get multiple fastqs, type: 
+```
+prefetch --option-file SRR_Acc_List.txt # SRR_Acc_List.txt being a list of your ACCESSIONS
+fastq-dump ACCESSION ACCESSION ACCESSION ACCESSION ... # no list file here, just put all you accessions separated by a space
+```
+
 
 ## looking at raw genomic data through `fastq`
 
