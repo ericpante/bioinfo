@@ -4,7 +4,7 @@
 ## parsing_fastqc fastqc_data.txt
 
 file=$(grep "^Filename" $1 | cut -f 2)
-seq=$(grep "^Total" $1 | cut -f 2)
+seq=$(grep "^Total Seq" $1 | cut -f 2)
 len=$(grep "^Sequence len" $1 | cut -f 2)
 gc=$(grep "^%GC" $1 | cut -f 2)
 
