@@ -26,7 +26,7 @@ alias eza="eza -l -s oldest -r --icons=always"
 ```
 
 
-## eza
+## `eza`
 
 replacement for `ls`; on Mac, need a `nerd` font, installed with `brew install --cask font-jetbrains-mono-nerd-font`
 
