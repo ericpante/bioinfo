@@ -1,7 +1,7 @@
-# Notes on Terminal / bash session configuration
+# Notes on Terminal / `bash` session configuration
 Eric Pante 
 
-## bash session config
+## `bash` session config
 
 bash reads `~/.bash_profile`, then `~/.bashrc`. 
 On my Mac I have `fish`, which I control with `~/.config/fish/config.fish`
