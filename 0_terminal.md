@@ -14,7 +14,7 @@ work in class - getting acquainted with the following commands:
 - understanding and changing file permissions (`chmod`) (eg. `chmod a+x seitan.sh`)
 - working with archives: `tar` and tarballs
 - compressing `gzip` and decompressing `gunzip`
-- wildcards (characters with special meanings) and globbing: `?`, `*`, `!`, `[...]`...
+- wildcards (characters with special meanings) and globbing: `?`, `*`, `**`, `!`, `[...]`...
 - piping: `|`
 - scripting: `.sh` (shebang bash : `#!/bin/bash`)
 - variables: `$PATH`, `$HOME`, `$1`, `$@` (eg `DESKTOP=$HOME/Bureau` and `echo $DESKTOP`) 
