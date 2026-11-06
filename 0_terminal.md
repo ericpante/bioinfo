@@ -21,7 +21,7 @@ work in class - getting acquainted with the following commands:
   -  `!` not (eg `[!abc]`)
 - piping: `|`
 - scripting: `.sh` (shebang bash : `#!/bin/bash`)
-- variables: `$PATH`, `$HOME`, `$1`, `$@` (eg `DESKTOP=$HOME/Bureau` and `echo $DESKTOP`) 
+- variables: `$PATH`, `$HOME`, `$0`, `$1`, `$@`... eg of var use:  `DESKTOP=$HOME/Bureau` and `echo $DESKTOP`
 
 ## getting data using `ftp`, `http` and `api`
 
