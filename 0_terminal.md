@@ -22,6 +22,7 @@ work in class - getting acquainted with the following commands:
 - piping: `|`
 - scripting: `.sh` (shebang bash : `#!/bin/bash`)
 - variables: `$PATH`, `$HOME`, `$0`, `$1`, `$@`... eg of var use:  `DESKTOP=$HOME/Bureau` and `echo $DESKTOP`
+- string search and manipulation: `grep`, `sed`, and `àwk`
 
 ## getting data using `ftp`, `http` and `api`
 
