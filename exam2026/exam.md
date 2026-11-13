@@ -85,3 +85,16 @@ awk 'NR%4==1' file.fastq        # keeps only the NAME line of every FASTQ record
 4. Run it on all individuals. **Which one would you remove from a population genetic analysis?**
 
 ---
+
+## Exercise 3: Check the restriction site
+
+**Context:** in RAD-seq, DNA is cut by a restriction enzyme, so nearly all reads should start with the same short motif. In the *Pedicularis* data of the course this motif is `TGCA`. Reads that do not start with it come from something else (contamination, adapters, a failed digest).
+
+1. Count the reads of `popA_ind01.fastq` whose **sequence** starts with `TGCA`. (`^` anchors a pattern at the start of a line.)
+2. Write `ex3_cutsite.sh` taking the **motif as first argument** and the files as the following arguments, for example:
+   `./ex3_cutsite.sh TGCA popA_*.fastq`
+   (hint: `motif=$1` then `shift`).
+3. Output: `file  motif  n_reads_with_motif  percent`.
+4. Which individual behaves differently? Give two possible explanations. Is it the same individual as in exercise 2?
+
+---
