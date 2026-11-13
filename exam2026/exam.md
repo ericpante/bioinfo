@@ -1,5 +1,7 @@
 # 2026 final exam
 
+Present your work in a GitHub repository entitled `bioinfo`, as a markdown  (`.md`) file. 
+
 **Prerequisites:** the terminal basics from `0_terminal.md` (navigation, redirection, pipes, globbing, variables, `grep`, `sed`, scripts).
 **Tools allowed:** bash and the commands seen in class. A few `awk` one-liners are *given* to you (marked **awk**): you do not need to understand `awk` yet, only to use it.
 **Time:** about 2h but and extra 1h for (3h) ; you have until Monday Nov16, 5PM. 
