@@ -74,3 +74,14 @@ awk 'NR%4==1' file.fastq        # keeps only the NAME line of every FASTQ record
 > **Think:** which individual has the fewest reads? Would you trust a comparison of its diversity with the others?
 
 ---
+
+## Exercise 2: Which individuals look unusable?
+
+**Context:** sequencers write `N` when a base could not be called. Individuals with many `N` are suspicious (poor DNA, failed library).
+
+1. For `popA_ind01.fastq`, extract the sequence lines (**awk** one-liner above) and count how many contain **no** `N` (`grep -v`).
+2. Compute the percentage of reads without any `N` (integer arithmetic is fine).
+3. Write `ex2_quality_N.sh`: for every file given as argument, print `file  n_reads  n_reads_without_N  percent`. Print a header line first.
+4. Run it on all individuals. **Which one would you remove from a population genetic analysis?**
+
+---
