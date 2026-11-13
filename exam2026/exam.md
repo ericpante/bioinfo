@@ -98,3 +98,93 @@ awk 'NR%4==1' file.fastq        # keeps only the NAME line of every FASTQ record
 4. Which individual behaves differently? Give two possible explanations. Is it the same individual as in exercise 2?
 
 ---
+
+## Exercise 4: A small test dataset, and archiving
+
+**Context:** you never test a new pipeline on the full dataset. You build a small subsample first, and you archive and compress what you send to collaborators.
+
+1. Create a folder `subsample`.
+2. Write `ex4_subsample.sh` taking the number of reads to keep as `$1` and the files as the other arguments. It writes, in `subsample/`, the first *n* reads of each file.
+   **Careful:** `head` counts *lines*, and a read is 4 lines. Compute the number of lines in the script.
+3. Check your result: `wc -l subsample/*`. Does it match what you asked for?
+4. Make a compressed archive `subsample.tar.gz` of the folder with `tar`.
+5. Compare `du -h subsample` with `ls -lh subsample.tar.gz`.
+6. Compress **a copy** of one full FASTQ file with `gzip` and compare the sizes with `ls -lh`. What is the compression ratio? Why does it matter for a sequencing project with 500 individuals?
+
+---
+
+## Exercise 5: From FASTQ to FASTA
+
+**Context:** many programs need FASTA, which has no quality line.
+
+```
+FASTQ                                  FASTA
+@read1 ...                             >read1 ...
+TGCAGG...                              TGCAGG...
++read1 ...
+IIIIII...
+```
+
+1. Using `grep -A1`, `sed` and a pipe, produce the FASTA version of `popA_ind01.fastq`.
+2. You will see lines made of `--` in your output. Where do they come from, and how do you delete them with a second `sed`?
+3. Write `ex5_fq2fa.sh`: `$1` is the input file, and the output file is named like the input but with `.fasta` instead of `.fastq`. (Hint: `${1%.fastq}` removes the suffix.)
+4. Convert all the files of population A with a loop.
+5. **Check your work:** the number of `>` lines must equal the read count of exercise 1.
+6. **Bug hunt:** your script searches for names beginning with `@SRR`. What happens with a file whose read names start with something else? Write a second version, `ex5_fq2fa_robust.sh`, that does not depend on the read names. (Hint: the **awk** one-liners of the toolbox keep lines 1 and 2 of each record.)
+
+---
+
+## Exercise 6: Read the headers of a haplotype FASTA
+
+**Context:** public databases give you sequences with long headers that hold the metadata. Let us extract it.
+
+```
+>ENA|AY000001|AY000001.1 Macoma balthica haplotype 29 cytochrome c oxidase subunit I (COX1) gene, partial cds; mitochondrial.
+```
+
+1. How many sequences does `macoma_cox1.fasta` contain?
+2. Print only the header lines. Then print only the **accession numbers** (field 2 when splitting on `|`).
+3. Extract the **haplotype number** with
+   `sed 's/.*haplotype \([0-9]*\).*/\1/'`
+   (read it aloud: "everything, the word haplotype and a space, then digits that I remember, then everything").
+4. Write `ex6_count_seqs.sh` which, for any file given as argument, prints `file contains N sequences`, **whether it is a FASTA or a FASTQ**. It must decide with an `if` on the file name. Test it on `popA_ind01.fastq`, `popA_ind01.fasta` and `macoma_cox1.fasta`.
+5. Save a two-column table `accession  haplotype` in a file `haplotypes.tsv`.
+
+---
+
+## Exercise 7: How different are two haplotypes?
+
+**Context:** the simplest measure of divergence between two aligned sequences of equal length is *p*, the proportion of sites that differ: *p = differences / sites*.
+
+**Step 1: put each sequence on one line.** Your FASTA is wrapped, which is inconvenient. Your teacher gives you the script `ex7_unwrap.sh`. Run:
+
+```bash
+./ex7_unwrap.sh macoma_cox1.fasta > macoma_1line.fasta
+```
+
+and check with `head` that each sequence now fits on one line.
+
+**Step 2: a toy example first.** In the terminal:
+
+```bash
+a="ACGTACGT"
+b="ACGAACGA"
+echo ${#a}          # length of the string
+echo ${a:3:1}       # one character, starting at position 3 (counting from 0)
+```
+
+Write a `for` loop over positions `0` to `7` that counts the differences between `a` and `b`. You should find 2.
+
+**Step 3: the real thing.** Write `ex7_diff.sh` taking the FASTA file and the numbers of two sequences:
+`./ex7_diff.sh macoma_1line.fasta 1 2`
+
+- In a one-line-per-sequence FASTA, sequence *n* is on line 2*n*. Fetch it with `sed -n "${l}p" file`.
+- Count the differences with your loop.
+- Print: `seq 1 vs seq 2: X differences over L sites`.
+
+**Questions**
+
+- Which two haplotypes are the most similar? The most different? (Loop over the pairs.)
+- Why must the sequences be **aligned** and of equal length for this to make sense?
+
+---
