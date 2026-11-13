@@ -10,13 +10,13 @@
 
 - create a `data` folder in your $HOME
 - create a `work` folder in your $HOME
-- get the dummy dataset from GitHub and place it in `data/`: 
+- get the dummy dataset from GitHub and place it in `data/`. The data are [here](https://github.com/ericpante/bioinfo/tree/main/exam2026). You can get them with `wget`(check the green `<> Code`button on the main repository page) or using the `Download zip` button. 
 
 | File(s) | What it is |
 |---|---|
 | `popA_ind01.fastq` ... `popA_ind03.fastq` | fake RAD-seq reads of 3 individuals from population A |
 | `popB_ind01.fastq` ... `popB_ind03.fastq` | fake RAD-seq reads of 3 individuals from population B |
-| `macoma_cox1.fasta` | COX1 haplotypes of *Macoma balthica* (FASTA, sequences wrapped on several lines) |
+| `macoma_cox1.fasta` | _cox1_ haplotypes of *Macoma balthica* (FASTA, sequences wrapped on several lines) |
 
 Filenames follow the pattern `population_individual.fastq`. This is not an accident: the name carries information that you will extract with `cut`.
 
