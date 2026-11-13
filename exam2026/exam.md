@@ -2,7 +2,7 @@
 
 **Prerequisites:** the terminal basics from `0_terminal.md` (navigation, redirection, pipes, globbing, variables, `grep`, `sed`, scripts).
 **Tools allowed:** bash and the commands seen in class. A few `awk` one-liners are *given* to you (marked **awk**): you do not need to understand `awk` yet, only to use it.
-**Time:** about 3 h.
+**Time:** about 2h but and extra 1h for (3h) ; you have until Monday Nov16, 5PM. 
 
 ---
 
@@ -14,8 +14,8 @@
 
 | File(s) | What it is |
 |---|---|
-| `popA_ind01.fastq` ... `popA_ind03.fastq` | RAD-seq reads of 3 individuals from population A |
-| `popB_ind01.fastq` ... `popB_ind03.fastq` | RAD-seq reads of 3 individuals from population B |
+| `popA_ind01.fastq` ... `popA_ind03.fastq` | fake RAD-seq reads of 3 individuals from population A |
+| `popB_ind01.fastq` ... `popB_ind03.fastq` | fake RAD-seq reads of 3 individuals from population B |
 | `macoma_cox1.fasta` | COX1 haplotypes of *Macoma balthica* (FASTA, sequences wrapped on several lines) |
 
 Filenames follow the pattern `population_individual.fastq`. This is not an accident: the name carries information that you will extract with `cut`.
